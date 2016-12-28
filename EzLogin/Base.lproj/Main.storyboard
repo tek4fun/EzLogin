@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EzLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,108 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iphone-6s-Wallpapers-HD-1080x1920-3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XUX-uh-D3W"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-tU-SfT">
+                                <frame key="frameInset" minX="48" minY="85" width="311" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25477290153503418" green="0.77237731218338013" blue="0.94069653749465942" alpha="0.43115903253424659" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-21-YkV">
+                                <frame key="frameInset" minX="48" minY="142" width="311" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25477290153503418" green="0.77237731218338013" blue="0.94069653749465942" alpha="0.43118578767123289" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO1-9A-NO1">
+                                <frame key="frameInset" minX="48" minY="213" width="311" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21418546828655519" green="0.11838840219073159" blue="0.70513409376144409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Đăng nhập">
+                                    <color key="titleColor" red="0.58296242414820154" green="0.70513409376144409" blue="0.50701300949150141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action_Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ty-dM-u8b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMP-6P-axw">
+                                <frame key="frameInset" minX="48" minY="289" width="311" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21418546828655519" green="0.11838840219073159" blue="0.70513409376144409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Thêm">
+                                    <color key="titleColor" red="0.58296242414820154" green="0.70513409376144409" blue="0.50701300949150141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action_Add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MPl-UR-YQZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvb-NJ-8B8">
+                                <frame key="frameInset" minX="48" minY="327" width="311" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21418546828655519" green="0.11838840219073159" blue="0.70513409376144409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Xoá">
+                                    <color key="titleColor" red="0.58296242414820154" green="0.70513409376144409" blue="0.50701300949150141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action_Delete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBC-Ys-DzP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OU-8f-VDj">
+                                <frame key="frameInset" minX="48" minY="251" width="311" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21418546828655519" green="0.11838840219073159" blue="0.70513409376144409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Danh sách">
+                                    <color key="titleColor" red="0.58296242414820154" green="0.70513409376144409" blue="0.50701300949150141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action_List:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQt-NT-STf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XUX-uh-D3W" secondAttribute="bottom" id="Frs-6T-ZK2"/>
+                            <constraint firstAttribute="trailing" secondItem="XUX-uh-D3W" secondAttribute="trailing" id="PBa-XR-I28"/>
+                            <constraint firstItem="XUX-uh-D3W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q3e-fP-7Ug"/>
+                            <constraint firstItem="XUX-uh-D3W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TcQ-l0-viy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tf_pass" destination="3PG-21-YkV" id="fwC-hO-sGL"/>
+                        <outlet property="tf_user" destination="BGs-tU-SfT" id="sfa-CH-QsK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="172" y="120.98950524737631"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Iphone-6s-Wallpapers-HD-1080x1920-3.jpg" width="1080" height="1920"/>
+    </resources>
 </document>

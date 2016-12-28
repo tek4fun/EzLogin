@@ -12,6 +12,7 @@
 		1E188E521E12656200E4BC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E188E501E12656200E4BC40 /* Main.storyboard */; };
 		1E188E541E12656200E4BC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E188E531E12656200E4BC40 /* Assets.xcassets */; };
 		1E188E571E12656200E4BC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E188E551E12656200E4BC40 /* LaunchScreen.storyboard */; };
+		1E188E5F1E1271C400E4BC40 /* Iphone-6s-Wallpapers-HD-1080x1920-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E188E5E1E1271C400E4BC40 /* Iphone-6s-Wallpapers-HD-1080x1920-3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1E188E531E12656200E4BC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E188E561E12656200E4BC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E188E581E12656200E4BC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E188E5E1E1271C400E4BC40 /* Iphone-6s-Wallpapers-HD-1080x1920-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Iphone-6s-Wallpapers-HD-1080x1920-3.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1E188E4B1E12656200E4BC40 /* EzLogin */ = {
 			isa = PBXGroup;
 			children = (
+				1E188E5E1E1271C400E4BC40 /* Iphone-6s-Wallpapers-HD-1080x1920-3.jpg */,
 				1E188E4C1E12656200E4BC40 /* AppDelegate.swift */,
 				1E188E4E1E12656200E4BC40 /* ViewController.swift */,
 				1E188E501E12656200E4BC40 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			files = (
 				1E188E571E12656200E4BC40 /* LaunchScreen.storyboard in Resources */,
 				1E188E541E12656200E4BC40 /* Assets.xcassets in Resources */,
+				1E188E5F1E1271C400E4BC40 /* Iphone-6s-Wallpapers-HD-1080x1920-3.jpg in Resources */,
 				1E188E521E12656200E4BC40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
